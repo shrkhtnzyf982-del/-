@@ -1,10 +1,10 @@
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER000"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-PLACEHOLDER000');
+  gtag('config', 'G-XXXXXXXXXX');
 </script>
 <script>
 (function(){
@@ -24,28 +24,4 @@
 })();
 </script>
 
-<script>
-(function(){
-  function enhanceServices(){
-    var section = document.getElementById('services') || document.querySelector('.services-section') || document.querySelector('section.services');
-    if(!section) return;
-    var grid = section.querySelector('.services-grid') || section.querySelector('.grid') || section.querySelector('[class*="service"]');
-    if(!grid || grid.dataset.marquee==='1') return;
-    var cards = grid.children;
-    if(cards.length < 3) return;
-    var wrap = document.createElement('div');
-    wrap.className = 'services-auto-wrap';
-    var track = document.createElement('div');
-    track.className = 'services-auto-track';
-    // clone children twice for seamless loop
-    var html = grid.innerHTML;
-    track.innerHTML = html + html;
-    wrap.appendChild(track);
-    grid.parentNode.insertBefore(wrap, grid);
-    grid.style.display = 'none';
-    grid.dataset.marquee = '1';
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', enhanceServices);
-  else enhanceServices();
-})();
-</script>
+

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://facade-tile-clean.com/sitemap.xml
+Sitemap: https://www.facadeclean-sa.com/sitemap.xml
